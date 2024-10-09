@@ -5,8 +5,8 @@ var userClickedPattern = [];
 var level = 0;
 var ingame; 
 
-//--------- Game start by pressing key----------------
-$(document).keypress(function() {
+function gamestart(){
+  
     if (!started) {
       $("#level-title").text("Level " + level);
       nextSequence();
@@ -14,9 +14,13 @@ $(document).keypress(function() {
       gameAudio()
       
     }
+  
+  }
+  
+  $(".glow-on-hover").click(function () {
+    gamestart();
   });
 
-//random sequence
 
 function nextSequence(){
     userClickedPattern = [];
