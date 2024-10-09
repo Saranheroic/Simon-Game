@@ -1,4 +1,4 @@
-Simon Game - README
+Simon Game -
 This is a web-based version of the classic Simon Game built with JavaScript, jQuery, HTML, and CSS.
 
 Game Description
