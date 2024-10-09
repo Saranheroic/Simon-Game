@@ -12,6 +12,7 @@ function gamestart(){
       nextSequence();
       started = true;
       gameAudio()
+      $(".glow-on-hover").hide();
       
     }
   
@@ -76,9 +77,10 @@ $(".btn").click(function(){
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
-$("#level-title").text("Game Over, Press Any Key to Restart");
+$("#level-title").text("Game Over");
 stopAudio();
 startOver()
+$(".glow-on-hover").show();
 
     
         }
